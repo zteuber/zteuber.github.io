@@ -3,34 +3,53 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ziwen Teuber | Personal Homepage</title>
+  <title>Ziwen Teuber | Homepage</title>
+
   <style>
     body {
       margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: 'Segoe UI', Arial, sans-serif;
       background: #f5f7fa;
       color: #222;
       line-height: 1.6;
     }
 
-    header {
+    /* NAVIGATION */
+    nav {
+      display: flex;
+      justify-content: center;
       background: #2d3e50;
+      padding: 1rem;
+      gap: 2rem;
+    }
+    nav a {
       color: white;
-      padding: 2rem 1rem;
-      text-align: center;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 2.3rem;
-    }
-
-    header p {
-      margin-top: 0.5rem;
+      text-decoration: none;
+      font-weight: bold;
       font-size: 1.1rem;
-      opacity: 0.9;
+    }
+    nav a:hover {
+      text-decoration: underline;
     }
 
+    /* HEADER */
+    header {
+      text-align: center;
+      padding: 2rem;
+      background: #ffffff;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    .profile-photo {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+      border: 4px solid #2d3e50;
+    }
+
+    /* CONTENT */
     .container {
       max-width: 900px;
       margin: auto;
@@ -43,10 +62,6 @@
       border-radius: 12px;
       margin-bottom: 2rem;
       box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-    }
-
-    h2 {
-      margin-top: 0;
     }
 
     footer {
@@ -63,17 +78,27 @@
       text-decoration: none;
       font-weight: bold;
     }
-
     .social-links a:hover {
       text-decoration: underline;
     }
   </style>
 </head>
+
 <body>
 
+  <!-- 🔹 NAVIGATION -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="publications.html">Publications</a>
+    <a href="projects.html">Projects</a>
+    <a href="mailto:ziwen.teuber@uni.lu">Contact</a>
+  </nav>
+
+  <!-- 🔹 HEADER WITH PHOTO -->
   <header>
+    <img src="img/profile.jpg" alt="Ziwen Teuber" class="profile-photo" />
     <h1>Ziwen Teuber</h1>
-    <p>Welcome to my personal homepage!</p>
+    <p>Senior Researcher | Applied Developmental & Educational Psychology</p>
   </header>
 
   <div class="container">
@@ -83,35 +108,19 @@
       <p>
         Hello and welcome! I’m <strong>Ziwen Teuber</strong>.
         I’m currently a Senior Researcher at the University of Luxembourg, dedicated to advancing family research and improving family support systems. 
-        My academic journey began at Bielefeld University, where I studied psychology from 2011 to 2016 and later completed my PhD in 2021. 
-        Today, my work centers on Applied Developmental and Educational Psychology, with the goal of generating research that makes 
-        a meaningful and practical difference in family development, functioning, and well-being.
+        My academic journey began at Bielefeld University, where I studied psychology from 2011 to 2016 and completed my PhD in 2021.
+        My work focuses on Applied Developmental and Educational Psychology — with the goal of generating research that makes 
+        a meaningful and practical difference in family functioning and well-being.
       </p>
-    </section>
-
-    <section>
-      <h2>Projects</h2>
-      <p>
-        Here are some things I am working on or interested in:
-      </p>
-      <ul>
-        <li>Unpacking Parental Involvement in Challenging Situations (UPICAS) </li>
-        <li>Scrolling Minds </li>
-        <li>Predictors and Outcomes of Parental Burnout and Parental Educational Involvement (POPP) </li>
-        <li>Parental Holiday Stress</li>
-      </ul>
     </section>
 
     <section>
       <h2>Contact</h2>
-      <p>
-        You can reach me here:
-      </p>
+      <p>You can reach me here:</p>
       <div class="social-links">
-        <!-- Add your real links if you want -->
-        <a href="ziwen.teuber@uni.lu">Email</a>
+        <a href="mailto:ziwen.teuber@uni.lu">Email</a>
         <a href="#">GitHub</a>
-        <a href="#">Reserach Gate</a>
+        <a href="#">ResearchGate</a>
         <a href="#">LinkedIn</a>
       </div>
     </section>
