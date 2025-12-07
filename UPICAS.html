@@ -1,29 +1,46 @@
-<!-- 🔹 HEADER -->
+<!-- HEADER -->
 <header>
-  <div class="project-logos">
-    <img src="img/UPICAS_LOGO_box.png" alt="UPICAS Project Logo" />   
-    <img src="img/FNR_LOGO_BIG.png" alt="Funder Logo" />
-  </div>
+  <div class="header-content">
+    <!-- Logos über dem Projektnamen -->
+    <div class="project-logos">
+      <img src="img/UPICAS_LOGO_box.png" alt="UPICAS Project Logo" />
+      <img src="img/FNR_LOGO_BIG.png" alt="Funder Logo" />
+    </div>
 
-  <h2>
-    <span class="first-letter">U</span>npacking 
-    <span class="first-letter">P</span>arental 
-    <span class="first-letter">I</span>nvolvement 
-    <span class="first-letter">C</span>hallenging 
-    <span class="first-letter">A</span>chievement 
-    <span class="first-letter">S</span>ituations
-  </h2>
+    <!-- Projekttitel mit unterstrichenen Anfangsbuchstaben -->
+    <h1>
+      <span class="first-letter">U</span>npacking
+      <span class="first-letter">P</span>arental
+      <span class="first-letter">I</span>nvolvement
+      <span class="first-letter">C</span>hallenging
+      <span class="first-letter">A</span>chievement
+      <span class="first-letter">S</span>ituations
+    </h1>
+  </div>
 </header>
 
 <style>
   header {
     text-align: center;
-    padding: 4rem 2rem 2rem; /* mehr Padding oben wegen Logos */
-    background: url('img/header-bg.jpg') no-repeat center center;
+    padding: 4rem 2rem;
+    background: url('img/header-background_1.jpg') no-repeat center center;
     background-size: cover;
-    color: white; /* falls du weiße Schrift auf dunklem Bild willst */
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    color: white;
     position: relative;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  }
+
+  header::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.4); /* Overlay für bessere Lesbarkeit */
+    z-index: 0;
+  }
+
+  .header-content {
+    position: relative;
+    z-index: 1;
   }
 
   .project-logos {
@@ -31,7 +48,7 @@
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    margin-bottom: 2rem; /* Abstand zu Überschrift */
+    margin-bottom: 2rem;
   }
 
   .project-logos img {
@@ -43,6 +60,7 @@
     text-decoration: underline;
   }
 </style>
+
 
 
     <!-- Project Design -->
