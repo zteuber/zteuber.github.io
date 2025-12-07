@@ -10,7 +10,11 @@
       margin: 0;
       font-family: 'Segoe UI', Arial, sans-serif;
       background: #f5f7fa;
+      color: #222;
+      line-height: 1.6;
     }
+
+    /* NAVIGATION */
     nav {
       display: flex;
       justify-content: center;
@@ -22,14 +26,39 @@
       color: white;
       text-decoration: none;
       font-weight: bold;
+      font-size: 1.1rem;
     }
-    nav a:hover { text-decoration: underline; }
+    nav a:hover {
+      text-decoration: underline;
+    }
 
+    /* HEADER */
+    header {
+      text-align: center;
+      padding: 2rem;
+      background: #ffffff;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    .project-logos {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      margin-top: 1rem;
+    }
+    .project-logos img {
+      max-height: 80px;
+      object-fit: contain;
+    }
+
+    /* CONTENT */
     .container {
       max-width: 900px;
       margin: auto;
       padding: 2rem 1rem;
     }
+
     section {
       background: white;
       padding: 2rem;
@@ -37,40 +66,81 @@
       margin-bottom: 2rem;
       box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     }
+
     h2 {
       margin-top: 0;
     }
+
     ul {
       padding-left: 1.2rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #2d3e50;
+      color: white;
+      margin-top: 2rem;
     }
   </style>
 </head>
 <body>
 
+  <!-- 🔹 NAVIGATION -->
   <nav>
     <a href="index.html">Home</a>
     <a href="publications.html">Publications</a>
-    <a href="projects.html">Projects</a>
+    <a href="UPICAS.html">UPICAS</a>
+    <a href="projects.html">Other Projects</a>
+    <a href="mailto:ziwen.teuber@uni.lu">Contact</a>
   </nav>
 
+  <!-- 🔹 HEADER -->
+  <header>
+    <h1>UPICAS Project</h1>
+    <p>Unpacking Parental Involvement in Challenging Situations</p>
+
+    <div class="project-logos">
+      <img src="upicas-logo.png" alt="UPICAS Project Logo" />
+      <img src="funder-logo.png" alt="Funder Logo" />
+    </div>
+  </header>
+
   <div class="container">
+
+    <!-- Project Design -->
     <section>
-      <h2>Unpacking Parental Involvement in Challenging Situations (UPICAS)</h2>
-      
-      <h3>Project Design</h3>
-      <p>The UPICAS project investigates parental involvement under challenging circumstances using a mixed-methods approach. It combines surveys, interviews, and observational studies to understand how parents support their children in complex educational and social situations.</p>
-      
-      <h3>Aims</h3>
+      <h2>Project Design</h2>
+      <p>
+        The UPICAS project investigates parental involvement under challenging circumstances using a mixed-methods approach.
+        It combines surveys, interviews, and observational studies to understand how parents support their children in complex educational and social situations.
+      </p>
+    </section>
+
+    <!-- Aims -->
+    <section>
+      <h2>Aims</h2>
       <ul>
         <li>Examine the forms and strategies of parental involvement in difficult contexts.</li>
         <li>Identify factors that facilitate or hinder effective parental support.</li>
         <li>Provide recommendations for educators and policymakers to better engage families.</li>
       </ul>
-      
-      <h3>Status</h3>
-      <p>The project is currently in the data collection phase, with preliminary analysis underway. Findings are expected to inform both academic research and practical guidance for parents and schools.</p>
     </section>
+
+    <!-- Status -->
+    <section>
+      <h2>Status</h2>
+      <p>
+        The project is currently in the data collection phase, with preliminary analysis underway.
+        Findings are expected to inform both academic research and practical guidance for parents and schools.
+      </p>
+    </section>
+
   </div>
+
+  <footer>
+    © 2025 Ziwen Teuber — All rights reserved.
+  </footer>
 
 </body>
 </html>
